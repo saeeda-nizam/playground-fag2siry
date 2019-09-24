@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hochzeit Wunschliste</title>
+        <link rel="stylesheet" href="hochzeit stylesheet.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+</head>
+
+<body>
+    <div class="wunsch-main">
+        
+                <div class="container-name">
+                    <div class="div1">
+                        <h2>Hochzeit Wunschliste <input type="text" placeholder="Search.." name="search">
+                    
+                        <button>search</button>
+                    </div>
+
+
+                    <div class="div2">
+                        <h3>Liste hinzufügen: </h3>
+                        <input type="text" placeholder="Wunschender" name="search"> <br>
+                        <input type="text" placeholder="Schenkenden" name="search">
+                        <button>submit</button>
+                    </div>
+                    </h2>
+                </div>
+                
+            <ul id="example-1">
+                <li v-for="item in items">
+                    {{ item.message }}
+                </li>
+            </ul>
+    </div>
+  <script src="hochzeitVue.js"></script>
+</body>
+
+</html>
